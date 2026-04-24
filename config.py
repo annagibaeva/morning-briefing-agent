@@ -2,10 +2,11 @@ import os
 
 PLAN_FILE = r"C:\Users\annag\OneDrive\Documents\Claude-Cowork\PROJECTS\agent-pm-learning-plan.md"
 RESOURCES_FILE = r"C:\Users\annag\Downloads\agent-pm-resources.md"
-PROGRESS_FILE = os.path.join(os.path.dirname(__file__), "progress.json")
-LOG_FILE = os.path.join(os.path.dirname(__file__), "logs", "briefing.log")
-TOKEN_FILE = os.path.join(os.path.dirname(__file__), "token.json")
-CREDENTIALS_FILE = os.path.join(os.path.dirname(__file__), "credentials.json")
+_BASE = os.path.dirname(os.path.abspath(__file__))
+PROGRESS_FILE = os.path.join(_BASE, "progress.json")
+LOG_FILE = os.path.join(_BASE, "logs", "briefing.log")
+TOKEN_FILE = os.path.join(_BASE, "token.json")
+CREDENTIALS_FILE = os.path.join(_BASE, "credentials.json")
 
 EMAIL_TO = "annagibaeva05@gmail.com"
 MODEL = "claude-sonnet-4-6"

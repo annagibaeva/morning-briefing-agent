@@ -1,6 +1,6 @@
 token.json
 credentials.json
-logs/
+logs/briefing.log
 __pycache__/
 *.pyc
 .env
