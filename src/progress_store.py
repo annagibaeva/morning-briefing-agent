@@ -7,11 +7,11 @@ class ProgressStore:
         self._path = path
 
     def _load(self) -> dict:
-        with open(self._path) as f:
+        with open(self._path, encoding="utf-8") as f:
             return json.load(f)
 
     def _save(self, data: dict) -> None:
-        with open(self._path, "w") as f:
+        with open(self._path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
 
     def current_day(self, today: date | None = None) -> int:
