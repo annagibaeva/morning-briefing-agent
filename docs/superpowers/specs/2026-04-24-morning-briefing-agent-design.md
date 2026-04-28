@@ -197,3 +197,4 @@ Email content (subject lines, sender names) passes through Claude for the Meetin
 ## What a PM Should Notice
 
 This agent is a minimal augmented LLM loop: tools gather structured data, Claude adds the one thing tools can't — contextual prose that connects a meeting thread to a talking point, or a newsletter excerpt to today's learning topic. The 90-second read target is a forcing function on scope: every section that doesn't fit gets cut. That constraint is what makes it useful daily rather than occasionally.
+
